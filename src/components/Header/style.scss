@@ -1,12 +1,13 @@
 @use 'src/styles/vars';
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  margin: 3rem;
+  margin: 2em 2em 0em 2em ;
     &-home{
       font-size: 2.5rem;
       font-weight: 800;
+      margin-right: 2rem;
+      float: left;
+
     }
 
     &-ul{
@@ -26,6 +27,78 @@
     &-o{
       color: vars.$purple;
     }
+
+    &-burger{
+      display: flex;
+      justify-content: flex-end;
+    }
+}
+
+.burger {
+  cursor: pointer;
+
+  &-bar1,
+  &-bar2,
+  &-bar3 {
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  &-bar1.active {
+    transform: rotate(-45deg) translate(-4px, 6px);
+  }
+
+  &-bar2 {
+    opacity: 0;
+  }
+
+  &-bar3.active {
+    transform: rotate(45deg) translate(-6px, -6px);
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 100px;
+  right: -100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  transition: 0.5s;
+  overflow: hidden;
+
+  &.active {
+    right: 0;
+    top: 100px;
+  }
+
+  &-item {
+    width: 100%;
+    text-align: center;
+
+    &-link {
+      padding: 1em;
+      font-size: 1.5em;
+      display: inline-block;
+      color: white;
+      width: 100%;
+
+      &:hover,
+      &--active {
+        color: white;
+        font-weight: bold;
+        background-color: vars.$purple;
+        padding-right: 5rem;
+        transition: .3s;
+      }
+    }
+  }
 }
 
 
