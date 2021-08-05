@@ -1,13 +1,20 @@
 @use 'src/styles/vars';
 
 .header {
-  margin: 2em 2em 0em 2em ;
+  margin: 2em 2em 3em 2em ;
     &-home{
       font-size: 2.5rem;
       font-weight: 800;
       margin-right: 2rem;
       float: left;
-
+      transition: 0.3s;
+        &:hover {
+          color: vars.$purple;
+          .header-o {
+            transition: 0.3s;
+            color: white;
+          }
+        }
     }
 
     &-ul{
@@ -45,10 +52,20 @@
     background-color: white;
     margin: 6px 0;
     transition: 0.4s;
+      &:hover {
+        background-color: vars.$purple;
+      }
+  }
+
+  &-bar3 {
+    &:hover {
+      background-color: vars.$purple;
+    }
   }
 
   &-bar1.active {
     transform: rotate(-45deg) translate(-4px, 6px);
+    background-color: vars.$purple;
   }
 
   &-bar2 {
@@ -56,6 +73,7 @@
   }
 
   &-bar3.active {
+    background-color: vars.$purple;
     transform: rotate(45deg) translate(-6px, -6px);
   }
 }
@@ -76,6 +94,7 @@
   &.active {
     right: 0;
     top: 100px;
+    background-color: #0f0f0f;
   }
 
   &-item {
