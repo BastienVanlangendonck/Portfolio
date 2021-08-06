@@ -1,5 +1,5 @@
 import React from 'react';
-import Toshokan from 'src/assets/images/toshokan.png';
+import Toshokan from 'src/assets/toshokan.png';
 
 import './style.scss';
 
@@ -10,12 +10,11 @@ const Projects = () => (
     <div className="project-bar1" />
     <div className="project-bar2" />
     <p className="project-oclock">Projet développé en équipe lors de la formation O'clock .</p>
-    <Toshokan />
+    <img className="project-img" src={Toshokan} alt="toshokan-img" />
+    <div className="project-button-container">
+      <a href="https://toshokan-ripley.netlify.app/"><button className="project-button" type="button"> Détails </button></a>
+    </div>
   </div>
 );
-
-Projects.propTypes = {
-
-};
 
 export default Projects;

@@ -1,0 +1,55 @@
+@use 'src/styles/vars';
+
+.project {
+  margin: 1rem;
+
+  &-projet {
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &-toshokan {
+    margin-left: 2rem;
+    font-weight: 800;
+    font-size : 2rem;
+  }
+
+  &-o {
+    color: vars.$purple;
+  }
+
+  &-oclock {
+    margin: 1rem 2rem 1rem 2rem;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  &-img {
+    margin: 1rem 0rem 1rem 1rem;
+    width: 300px;
+    height: 300px;
+    filter:brightness(75%)
+  }
+
+  &-button {
+    background-color: vars.$purple;
+    border : 2px solid transparent;
+    border-radius: 30px;
+    padding: .4rem 2rem;
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    font-family: Poppins, sans-serif;
+    transition: .4s;
+      &:hover {
+        background-color: white;
+        color: vars.$purple;
+      }
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
