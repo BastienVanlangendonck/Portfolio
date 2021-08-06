@@ -1,0 +1,115 @@
+@use 'src/styles/vars';
+
+.skills {
+  margin: 1rem;
+
+  &-title1 {
+    text-decoration: underline 1px solid vars.$purple;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  &-label {
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  &-icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-bottom: 1rem ;
+    margin-right: 1rem;
+  }
+
+  &-text {
+    font-weight: bold;
+  }
+
+  &-bar-container{
+    position: relative;
+  }
+
+  &-bar1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    width: 15rem;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 4rem;
+    margin-top: .7rem;
+  }
+
+  &-bar2 {
+    &-html,
+    &-css,
+    &-js { 
+      position: absolute;
+      top: 0;
+      left: -1px;
+      height: 10px;
+      width: 12rem;
+      background-color: purple;
+      border-radius: 10px;
+      margin-left: 4rem;
+      margin-top: .7rem;
+    }
+    
+    &-react{
+      position: absolute;
+      top: 0;
+      left: -1px;
+      height: 10px;
+      width: 13rem;
+      background-color: purple;
+      border-radius: 10px;
+      margin-left: 4rem;
+      margin-top: .7rem;
+    }
+
+    &-php,
+    &-github {
+      position: absolute;
+      top: 0;
+      left: -1px;
+      height: 10px;
+      width: 10rem;
+      background-color: purple;
+      border-radius: 10px;
+      margin-left: 4rem;
+      margin-top: .7rem;
+    }
+
+    &-wp,
+    &-symfony {
+      position: absolute;
+      top: 0;
+      left: -1px;
+      height: 10px;
+      width: 4rem;
+      background-color: purple;
+      border-radius: 10px;
+      margin-left: 4rem;
+      margin-top: .7rem;
+    }
+
+    &-bootstrap {
+      position: absolute;
+      top: 0;
+      left: -1px;
+      height: 10px;
+      width: 8rem;
+      background-color: purple;
+      border-radius: 10px;
+      margin-left: 4rem;
+      margin-top: .7rem;
+    }
+  }
+
+  &-items-containers{
+    margin-bottom: 4rem;
+  }
+}

@@ -6,6 +6,7 @@ import Header from 'src/containers/Header';
 import Home from 'src/components/Home';
 import Projects from 'src/components/Projects';
 import About from 'src/components/About';
+import Skills from 'src/components/Skills';
 import './styles.css';
 
 // == Composant
@@ -15,6 +16,7 @@ const App = () => (
     <Home />
     <Projects />
     <About />
+    <Skills />
   </div>
 );
 
