@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+
+.footer {
+  background: rgb(15,15,15);
+  background: linear-gradient(180deg, rgba(15,15,15,1) 0%, rgba(15,15,15,1) 5%, rgba(110,15,155,1) 100%);
+
+  &-list {
+    text-align: center;
+  }
+
+  &-items {
+    margin: 1rem;
+    font-weight: 800;
+    font-size: .9rem;
+    &-cv {
+      font-weight: 800;
+      font-size: .9rem;
+      color: vars.$purple;
+      background-color: white;
+      padding: .5rem 3rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      transition: 1s;
+      cursor: pointer;
+      
+
+      &:hover {
+        background-color: vars.$purple;
+        color:white;
+        border: 2px solid white;
+      }
+    }
+  }
+}
+
+.link-cv{
+  display: flex;
+  justify-content: center;
+}
