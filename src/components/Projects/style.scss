@@ -87,6 +87,39 @@
       line-height: 1.3rem;
     }
   }
+}
 
- 
+@media (min-width: 1500px) {
+  .project {
+    
+    &-description {
+      margin: 6rem 4rem 8rem 4rem;
+      font-size: 1.5rem;
+      min-height: 150px;
+      line-height: 2rem;
+    }
+
+    &-img {
+      width: 550px;
+      height: 450px;
+      margin-right: 2.5rem;
+    }
+
+    &-projet {
+      font-size: 2rem;
+    }
+  
+    &-toshokan {
+      font-size : 3rem;
+    }
+
+    &-oclock {
+      margin: 3rem 2rem 4rem 2rem;
+      font-size: 2rem;
+    }
+
+    &-button {
+      padding: 1rem 10rem;
+    }
+  }
 }

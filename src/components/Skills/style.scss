@@ -122,3 +122,13 @@
     }
   }
 }
+
+@media (min-width: 1500px) {
+  .skills {
+    &-title1 {
+      font-size: 2rem;
+      margin-left: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
