@@ -23,7 +23,7 @@ const About = () => (
       j'ai eu un petit faible pour le Front-end donc je me suis lancé sur un mois de
       spécialisation sur React. Je suis désormais a la recherche d'un emploi
       dans le developpement web !
-      Si vous chercher quelqu'un qui a soif de compétences.. Je suis votre homme !
+      Si vous cherchez quelqu'un qui a soif de compétences.. Je suis votre homme !
     </p>
     <h3 className="about-title2">02 - Passions</h3>
     <div className="about-passions-container">
