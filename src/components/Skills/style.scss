@@ -3,6 +3,8 @@
 .skills {
   margin: 1rem;
   margin-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
 
   &-title1 {
     text-decoration: underline 1px solid vars.$purple;
@@ -19,9 +21,14 @@
   &-icon {
     width: 50px;
     height: 50px;
-    float: left;
-    margin-bottom: 1rem ;
+    // float: left;
+    margin-bottom: 0.8rem ;
+    margin-right: 0.8rem;
+  }
+
+  &-data {
     margin-right: 1rem;
+    
   }
 
   &-text {
@@ -32,91 +39,35 @@
     position: relative;
   }
 
-  &-bar1 {
-    position: absolute;
-    top: 0;
-    left: 0;
+  &-bar {
     height: 10px;
     width: 15rem;
     background-color: white;
     border-radius: 10px;
-    margin-left: 4rem;
     margin-top: .7rem;
-  }
+    // overflow: hidden;
+    position: relative;
 
-  &-bar2 {
-    &-html,
-    &-css,
-    &-js { 
-      position: absolute;
-      top: 0;
-      left: -1px;
-      height: 10px;
-      width: 12rem;
-      background-color: purple;
+    &-progression {
+      height: 100%;
       border-radius: 10px;
-      margin-left: 4rem;
-      margin-top: .7rem;
-    }
-    
-    &-react{
       position: absolute;
-      top: 0;
       left: -1px;
-      height: 10px;
-      width: 13rem;
       background-color: purple;
-      border-radius: 10px;
-      margin-left: 4rem;
-      margin-top: .7rem;
-    }
-
-    &-php,
-    &-github {
-      position: absolute;
-      top: 0;
-      left: -1px;
-      height: 10px;
-      width: 10rem;
-      background-color: purple;
-      border-radius: 10px;
-      margin-left: 4rem;
-      margin-top: .7rem;
-    }
-
-    &-wp,
-    &-symfony {
-      position: absolute;
-      top: 0;
-      left: -1px;
-      height: 10px;
-      width: 4rem;
-      background-color: purple;
-      border-radius: 10px;
-      margin-left: 4rem;
-      margin-top: .7rem;
-    }
-
-    &-bootstrap {
-      position: absolute;
-      top: 0;
-      left: -1px;
-      height: 10px;
-      width: 8rem;
-      background-color: purple;
-      border-radius: 10px;
-      margin-left: 4rem;
-      margin-top: .7rem;
+      transition: 1s;
     }
   }
 
   &-items-containers{
     margin-bottom: 4rem;
+    display: flex;
   }
 }
 
 @media (min-width: 768px) {
   .skills {
+    
+  justify-content: center;
     &-items-containers {
       max-width: 350px;
     }

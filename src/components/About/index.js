@@ -8,15 +8,22 @@ import Gaming from 'src/assets/images/gaming.png';
 import Code from 'src/assets/images/code.png';
 
 const About = () => (
-  <div className="about">
+  <div id="about" className="about">
     <h1 className="about-title">A propos de <span className="me">Moi</span></h1>
     <div className="about-bar1" />
     <div className="about-bar2" />
     <h3 className="about-title1">01 - Qui je suis</h3>
     <p className="about-me">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu
-      arcu ultricies, porta nisl ac, tincidunt nulla. Phasellus ut odio maximus,
-      vulputate sapien ut, tincidunt dui. alesuada.
+      Bienvenue !
+      Je me présente moi c'est Bastien, j'ai 25 ans et j'habite actuellement dans la Drôme.
+      Ayant travaillé en tant que technicien informatique pendant 2 ans, je me suis lancé dans
+      le developpement Web en suivant la formation O'clock qui m'a permis d'obtenir le Titre
+      Professionnel de Developpeur Web et Web Mobile de niveau 5 . <br />
+      Pendant cette formation nous avons pu voir PHP et JS principalement,
+      j'ai eu un petit faible pour le Front-end donc je me suis lancé sur un mois de
+      spécialisation sur React. Je suis désormais a la recherche d'un emploi
+      dans le developpement web !
+      Si vous chercher quelqu'un qui a soif de compétences.. Je suis votre homme !
     </p>
     <h3 className="about-title2">02 - Passions</h3>
     <div className="about-passions-container">

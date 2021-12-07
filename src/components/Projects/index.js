@@ -4,7 +4,7 @@ import Toshokan from 'src/assets/toshokan.png';
 import './style.scss';
 
 const Projects = () => (
-  <div className="project">
+  <div id="project" className="project">
     <p className="project-projet">Projet</p>
     <p className="project-toshokan">Tosh<span className="project-o">O</span>kan</p>
     <div className="project-bar1" />
